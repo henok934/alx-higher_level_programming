@@ -8,8 +8,9 @@ elif i == 1:
     print("{} argument:".format(i))
 else:
     print("{} arguments:".format(i))
-for argv in sys.argv:
-    if i >= 1:
-        i = 0
-        print("{}: {}".format(i, argv))
-        i = i + 1
+if i >= 1:
+    i = 0
+    for argv in sys.argv:
+        if i != 0:
+            print("{}: {}".format(i, argv))
+        i += 1
