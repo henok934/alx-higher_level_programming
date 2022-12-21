@@ -1,23 +1,44 @@
 #!/usr/bin/python3
-"""create class"""
+"""Square related feature module."""
 
 
 class Square:
-    """defining of the class"""
-    def list_division(my_list_1, my_list_2, list_length):
-        new_list = []
-        for i in range(list_length):
-            try:
-                result = my_list_1[i] / my_list_2[i]
-            except (ValueError, TypeError):
-                print("wrong type")
-                result = 0
-            except ZeroDivisionError:
-                print("division by 0")
-                result = 0
-            except IndexError:
-                print("out of range")
-                result = 0
-            finally:
-                new_list.append(result)
-        return new_list
+    """Class that define a Square."""
+    def __init__(self, size=0):
+        """
+        Args:
+        size (int): size initializer
+        """
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = size
+
+        def area(self):
+            """Compute the area of the Square.
+            Returns:
+            The area. An (integer)
+            """
+            return (self.__size ** 2)
+
+        @property
+        def size(self):
+            """__size property getter"""
+            return self.__size
+
+        @size.setter
+        def size(self, value):
+            """__size property setter.
+            Args:
+            value (int): new size value
+            Raises:
+            TypeError: if `value` is not an integer
+            ValueError: if `value` is < 0
+            """
+            if not isinstance(value, int):
+                raise TypeError("size must be an integer")
+            if value < 0:
+                raise ValueError("size must be >= 0")
+
+            self.__size = value
