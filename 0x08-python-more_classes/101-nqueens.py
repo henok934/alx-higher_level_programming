@@ -3,8 +3,6 @@
 """
 File: 101-nqueens.py
 Desc: The program in this module solves the N queens problem.
-Author: Gizachew Bayness (Elec Crazy)
-Date Created: Jul 25 2022
 """
 import sys
 
