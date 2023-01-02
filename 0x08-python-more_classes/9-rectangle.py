@@ -1,10 +1,8 @@
-#!/usr/bin/python3
+i#!/usr/bin/python3
 
 """
 File: 9-rectangle.py
-Desc: This file contains a single class defination called Rectangle
-Author: Gizachew Bayness (Elec Crazy)
-Date Created: Jul 25, 2022
+Desc: This file contains a single class defination called rectangle
 """
 
 
