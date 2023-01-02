@@ -3,8 +3,6 @@
 """
 File: 0-rectangle.py
 Desc: This file contains a simple class defination called Rectangle
-Author: Gizachew Bayness (Elec Crazy)
-Date Created: Jul 25, 2022
 """
 
 
