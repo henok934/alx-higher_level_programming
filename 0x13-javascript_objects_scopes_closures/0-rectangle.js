@@ -1,3 +1,3 @@
-#!/usr/bin/nod
-class Rectangle {
-};
+#!/usr/bin/node
+class Rectangle {}
+module.exports = Rectangle;
